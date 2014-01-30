@@ -1,0 +1,101 @@
+/*Theme Cockpit - by Pitang */
+@import "variaveis.less";
+
+/* Header */
+.timebar {
+    height:50px;
+    line-height:50px;
+    background-color:@secund-color;
+    .border(1px);
+    color:@secund-fcolor;
+}
+.header {
+    height:142px;
+    .searchbar {
+        height:34px;
+        .marginh(5px);
+        a.home {
+            .border(1px);
+            .padding(5px);
+            display:block;
+            width:73px;
+            text-decoration:none;
+        }
+        a.shutdown {
+            background-color:red;
+            font-size:1.2em;
+            color:white;
+            float:right;
+            .border-radius(5px);
+            .padding(5px 7px);
+            &:hover{
+                background-color: lighten(red, 20%);
+            }
+        }
+    }
+    .btnSearch {
+        height: 34px;
+        width:40px;
+        position: absolute;
+        right: 101px;
+        top: 0;
+    }
+}
+.logo {
+    height:150px;
+    .border(1px);
+    a {
+        position: relative;
+        top: 50px;
+    }
+}
+
+
+/*Clases Globais*/
+.borda{
+    .border(1px);
+}
+
+/* sidebar */
+.perfil{
+    display:block;
+    height:80px;
+    margin-bottom:15px;
+    ul {
+        padding:0;
+            li {
+            display:block;
+            list-style-type:none;
+            float:left;
+            padding-top:5px;
+            padding-bottom:5px;
+        }
+        .foto {
+            padding-left:10px;
+            padding-right:10px;
+        }
+    }
+    small { font-size:0.8em; }
+}
+
+/* Menu */
+
+nav{
+    .btn {
+        text-align:left !important;
+    }
+    .btn-group-vertical {
+        width:100%;
+        .caret {
+            position:absolute;
+            left:90%;
+            top:50%
+        }
+    }    
+}
+/*
+.dropdown-menu {
+    top:-10% !important;
+    left: 260px !important;
+    min-width:220px;
+}*/

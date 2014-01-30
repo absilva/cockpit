@@ -1,0 +1,375 @@
+﻿<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap3.css">
+
+<link rel="stylesheet" href="css/default.cockpit.css">
+<title>Cockpit</title>
+</head>
+
+<body>
+<div class="container">
+    <!-- /cabecalho -->
+    <div class="row">
+    <div class="col-md-3 col-lg-3 col-sm-3 logo">
+    	<header>
+        	<a href="#"><img src="images/logo-ne10.png" alt="Logo NE10 - Voltar à primeira pàgina" class="img-responsive"></a>
+        </header>
+        
+    </div>
+    <div class="col-md-9 col-lg-9 col-sm-9">
+    	<header class="header">
+        	<div class="row timebar">
+            	<span class="col-md-4"><span class="glyphicon glyphicon-calendar"></span> Recife, 22 de janeiro de 2014.</span>
+                <span class="col-md-4"><span class="glyphicon glyphicon-time"></span> Último acesso às 18:20</span>
+            </div>
+            <div class="row searchbar">
+            	<div class="col-md-2 col-lg-2 col-sm-2">
+                	<a href="index.html" class="home"><span class="glyphicon glyphicon-home"></span> Home</a>
+                </div>
+                <div class="col-md-8 col-lg-8 col-sm-8">
+                    <form action="#"  class="input-group">                   
+                    <input type="text" class="form-control">
+                      <div class="input-group-btn"> <!-- btn-group -->
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Pesquisar <span class="caret"></span></button>
+                        <ul class="dropdown-menu pull-right" data-toggle="dropdown" role="menu" aria-labelledby="dLabel">
+                          <li><a href="#" id="dLabel" rule="button" data-toggle="dropdown" data-target="#">Título</a></li>
+                          <li><a href="#" rule="button" data-toggle="dropdown" data-target="#">ID</a></li>
+                          <li><a href="#" rule="button" data-toggle="dropdown" data-target="#">Palavra chave</a></li>
+                        </ul>
+                      </div><!-- /btn-group -->
+                      <button class="btn btn-default glyphicon glyphicon-search btnSearch"></button>
+                    </form>
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-2">
+                	<a href="#" class="shutdown" title="Sair do Sistema">
+                    	<span class="glyphicon glyphicon-off"></span>
+                    </a>
+                </div>
+            </div>
+            	<!-- breadbrumb -->
+            <div class="row">
+            	<div class="col-md-12 col-lg-12 col-sm-12">
+                	<ol class="breadcrumb">
+                		<li><a href="#">Notícia</a></li>
+                        <li class="active">Notícia de Canal</li>
+                	</ol>
+                </div>
+            </div>
+           	<!-- /breadbrumb -->
+        </header>
+        
+    </div>
+    </div>
+    <!-- /cabecalho -->
+    
+    <!--  -->
+    <div class="row">
+    	<aside class="col-md-3 col-lg-3 col-sm-3">
+        	<div class="perfil">
+            	<ul>
+            		<li class="foto"><img src="images/thumb.jpg" class="img-circle" alt="Nome do usuário"></li>
+            		<li class="texto">
+                    	<a href="#"><strong>Reginaldo Lee</strong></a><br>
+                        <small>Super Administrador</small><br>
+                        <small>IP: 172.27.193.80</small>
+                    </li>
+            	</ul>
+            </div>
+            <hr>
+            <!-- MENU -->
+            <nav>
+             <div class="btn-group-vertical">        
+                <div class="btn-group btn-group-justified">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle text-left" type="button" id="btnGroupVerticalDrop1">
+                  	<span class="glyphicon glyphicon-pencil"></span>
+                    Conteúdo
+                    <span class="caret"></span>
+                  </button>
+                  <ul aria-labelledby="btnGroupVerticalDrop1" role="menu" class="dropdown-menu">
+                    <li><a href="#">SEO</a></li>
+                  </ul>
+                </div>
+                <div class="btn-group btn-group-justified">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button" id="btnGroupVerticalDrop2">
+                  	<span class="glyphicon glyphicon-tasks"></span>
+                    Cadastro
+                    <span class="caret"></span>
+                  </button>
+                  <ul aria-labelledby="btnGroupVerticalDrop2" role="menu" class="dropdown-menu">
+                    <li><a href="#">Colunista</a></li>
+                    <li><a href="#">Menu Corporativo</a></li>
+                    <li><a href="#">Destaque Topo</a></li>
+                    <li><a href="#">Grupo</a></li>
+                    <li><a href="#">Canal</a></li>
+                    <li><a href="#">Seção</a></li>
+                  </ul>
+                </div>
+                <div class="btn-group btn-group-justified">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button" id="btnGroupVerticalDrop3">
+                  	<span class="glyphicon glyphicon-font"></span>
+                    Notícia
+                    <span class="caret"></span>
+                  </button>
+                  <ul aria-labelledby="btnGroupVerticalDrop3" role="menu" class="dropdown-menu">
+                    <li><a href="#">Notícia de Canal</a></li>
+                    <li><a href="#">Tag</a></li>
+                  </ul>
+                </div>
+                <div class="btn-group btn-group-justified">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button" id="btnGroupVerticalDrop4">
+                  	<span class="glyphicon glyphicon-hand-up"></span>
+                    Interatividade
+                    <span class="caret"></span>
+                  </button>
+                  <ul aria-labelledby="btnGroupVerticalDrop4" role="menu" class="dropdown-menu">
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Mídia</a></li>
+                  </ul>
+                </div>
+                <div class="btn-group btn-group-justified">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button" id="btnGroupVerticalDrop4">
+                  	<span class="glyphicon glyphicon-cog"></span>
+                    Configurações
+                    <span class="caret"></span>
+                  </button>
+                  <ul aria-labelledby="btnGroupVerticalDrop4" role="menu" class="dropdown-menu">
+                    <li><a href="#">Usuário</a></li>
+                    <li><a href="#">Meus Dados</a></li>
+                    <li><a href="#">Ação</a></li>
+                    <li><a href="#">Módulo</a></li>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Palavrão</a></li>
+                  </ul>
+                </div>
+      		</div>
+
+            </nav>
+            
+            <!-- /MENU -->            
+        </aside>
+        <!-- Content -->
+    	<div class="col-md-9 col-lg-9 col-sm-9">
+        	<div class="row">
+            
+            	<div class="col-md-12 col-lg-12 col-sm12">
+                	<form action="#" method="get">
+                    <!-- botoes -->
+                    <div class="well well-sm text-right">
+                        <input type="button" value="Voltar" class="btn btn-warning">
+                    </div>
+                    <!-- /botoes -->
+                    <h1>Notícia de Canal</h1>
+                    <div class="panel panel-default">
+                    	<div class="panel-heading">
+                        	<h2 class="panel-title">Publicação</h2>
+                        </div>
+                        <div class="panel-body row">
+                        	<div class="col-lg-3 col-md-3">
+                            	<label for="ddlCanal">Canal</label><br>
+                                <select name="ddlCanal" id="ddlCanal" class="form-control" required>
+                                	<option value="0">Selecione</option>
+                                    <option value="1">Opção 1</option>
+                                    <option value="2">Opção 2</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-3">
+                            	<label for="ddlSecao">Seção</label><br>
+                                <select name="ddlSecao" id="ddlSecao" class="form-control">
+                                	<option value="0">Selecione</option>
+                                    <option value="1">Opção 1</option>
+                                    <option value="2">Opção 2</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-3">
+                            	<label for="txtDataPublicacao">Data de Publicação</label><br>
+                                <input type="date" name="txtDataPublicacao" id="txtDataPublicacao" size="10" maxlength="10" class="form-control" readonly>
+                            </div>
+                            <div class="col-lg-3 col-md-3">
+                            	<label for="txtHora">Canal</label><br>
+                                <input type="time" name="txtHora" id="txtHora" size="5" maxlength="5" value="16:00" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-lg-4 col-md-4">
+                        	<label for="txtChapeu">Chapéu</label><br>
+                            <input type="text" class="form-control" id="txtChapeu" id="txtChapeu" required>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                        	<label for="txtProced">Procedência</label><br>
+                            <input type="text" name="txtProced" id="txtProced" class="form-control">
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                        	<label for="txtAssinatura">Assinatura</label><br>
+                            <input type="text" name="txtAssinatura" id="txtAssinatura" class="form-control" placeholder="Do NE10">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                    	<div class="col-lg-12 col-md-12">
+                        	<div class="panel panel-default">
+                        	<div class="panel-heading">
+                            	<label for="ddlOptNoticias" class="panel-title">Opções de Notícias</label>
+                            </div>
+                            <div class="panel-body">
+                            	<div class="col-lg-4">
+                                	<select name="ddlOptNoticias" id="ddlOptNoticias" class="form-control">
+                                        <option value="0">Selecione</option>
+                                        <option value="1">Notícia Normal</option>
+                                        <option value="2">Notícia Fria</option>
+                                    </select>
+                                </div>
+                            	<div class="col-lg-8">
+                                	<label for="chboxOptNoticia1" class="checkbox-inline"><input type="checkbox" name="chboxOptNoticia" id="chboxOptNoticia1"> Habilitar Comentário</label>
+                                    <label for="chboxOptNoticia2" class="checkbox-inline"><input type="checkbox" name="chboxOptNoticia" id="chboxOptNoticia2"> Publicar em últimas</label>
+                                </div>                            	
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-lg-3 col-md-3">
+                        	<label for="txtTitulo">Tíulo</label><br>
+                        	<input type="text" name="txtTitulo" id="txtTitulo" class="form-control" required>
+                        </div>
+                    	<div class="col-lg-3 col-md-3">
+                        	<label for="txtEmail">Email</label><br>
+                            <input type="email" name="txtEmail" id="txtEmail" class="form-control">
+                        </div>
+                    	<div class="col-lg-3 col-md-3">
+                        	<label for="txtSubAss">Sub-assinatura</label><br>
+                            <input type="text" name="txtSubAss" id="txtSubAss" class="form-control">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                    	<div class="col-lg-12 col-md-12">
+                        	<label for="">Texto</label><br>
+                            <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>                            
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                    	<div class="col-lg-12 col-md-12">
+                    		<label for="txtChamadasAspas">Chamadas entre aspas</label>
+                    		<br>
+                    		<textarea name="txtChamadasAspas" id="txtChamadasAspas" cols="30" rows="3" class="form-control"></textarea>
+                    	</div>
+                    </div>
+                    <br>
+                    <div class="row">
+                    	<div class="col-lg-12 col-md-12">
+                    		<label for="txtCitacoesAspas">Citações Aspas</label>
+                    		<br>
+                    		<textarea name="txtCitacoesAspas" id="txtCitacoesAspas" cols="30" rows="3" class="form-control"></textarea>
+                    	</div>
+                    </div>
+                    <br>
+                    <div class="row">
+                    	<div class="col-lg-12 col-md-12">
+                    		<label for="txtChamadaOlho">Chamada Olho</label>
+                    		<br>
+                    		<textarea name="txtChamadaOlho" id="txtChamadaOlho" cols="30" rows="3" class="form-control"></textarea>
+                    	</div>
+                    </div>
+                    <br>
+                    <div class="row">
+                    	<div class="col-lg-12 col-md-12">
+                    		<label for="txtServicos">SERVIÇOS</label>
+                    		<br>
+                    		<textarea name="txtServicos" id="txtServicos" cols="30" rows="3" class="form-control"></textarea>
+                    	</div>
+                    </div>
+                    <br>
+                    <div class="row">
+                    	<div class="col-lg-12 col-md-12">
+                        	<div class="panel panel-primary">
+                            	<div class="panel-heading">
+                                	<h2 class="panel-title">Multimídia</h2>
+                                </div>
+                                <div class="panel-body">
+                                <ul class="nav nav-tabs">
+                                	<li class="active"><a href="#tabImagens" data-toggle="tab">Imagens</a></li>
+                                	<li><a href="#tabMidias" data-toggle="tab">Mídias</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                <br>
+                                	<div class="tab-pane active" id="tabImagens">
+                                    	
+                                        <div class="row">
+                                            	<div class="col-lg-8 col-md-8">Componente upload</div>
+                                        </div>
+                                        <br>
+
+                                        <div class="row">
+                                        	<div class="col-lg-12 div col-md-12">
+                                            	<label for="txtLegenda">Legenda</label><br>
+                                            	<textarea name="txtLegenda" id="txtLegenda" cols="30" rows="3" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                        <div class="row">
+                                        	<div class="col-lg-12 div col-md-12">
+												<label for="txtCredito">Crédito</label><br>
+                                            	<textarea name="txtCredito" id="txtCredito" cols="30" rows="3" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                        <div class="row">
+                                            	<div class="col-lg-8 col-md-8">Componente upload</div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                        	<div class="col-lg-12 div col-md-12">
+                                            	<label for="txtLegenda2">Legenda</label><br>
+                                            	<textarea name="txtLegenda2" id="txtLegenda2" cols="30" rows="3" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                        	<div class="col-lg-12 div col-md-12">
+												<label for="txtCredito2">Crédito</label><br>
+                                            	<textarea name="txtCredito2" id="txtCredito2" cols="30" rows="3" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                	<div class="tab-pane" id="tabMidias">
+                                    
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- botoes de acao -->
+                    <br>
+                    <div class="well well-sm text-right">
+                    	<input type="submit" value="Salvar" class="btn btn-info">
+                        <input type="button" value="Visualizar" class="btn btn-info">
+                        <input type="reset" value="Limpar formulário" class="btn btn-info">
+                        <input type="button" value="Voltar" class="btn btn-warning">
+                    </div>
+                    <!-- /botoes de acao -->
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <!-- /Content -->
+    </div>
+    <!-- / -->
+</div>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

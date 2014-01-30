@@ -1,0 +1,335 @@
+﻿<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap3.css">
+
+<link rel="stylesheet" href="css/default.cockpit.css">
+<title>Cockpit</title>
+</head>
+
+<body>
+<div class="container">
+    <!-- /cabecalho -->
+    <div class="row">
+    <div class="col-md-3 col-lg-3 col-sm-3 logo">
+    	<header>
+        	<a href="#"><img src="images/logo-ne10.png" alt="Logo NE10 - Voltar à primeira pàgina" class="img-responsive"></a>
+        </header>
+        
+    </div>
+    <div class="col-md-9 col-lg-9 col-sm-9">
+    	<header class="header">
+        	<div class="row timebar">
+            	<span class="col-md-4"><span class="glyphicon glyphicon-calendar"></span> Recife, 22 de janeiro de 2014.</span>
+                <span class="col-md-4"><span class="glyphicon glyphicon-time"></span> Último acesso às 18:20</span>
+            </div>
+            <div class="row searchbar">
+            	<div class="col-md-2 col-lg-2 col-sm-2">
+                	<a href="#" class="home"><span class="glyphicon glyphicon-home"></span> Home</a>
+                </div>
+                <div class="col-md-8 col-lg-8 col-sm-8">
+                    <form action="#"  class="input-group">                   
+                    <input type="text" class="form-control">
+                      <div class="input-group-btn"> <!-- btn-group -->
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Pesquisar <span class="caret"></span></button>
+                        <ul class="dropdown-menu pull-right" data-toggle="dropdown" role="menu" aria-labelledby="dLabel">
+                          <li><a href="#" id="dLabel" rule="button" data-toggle="dropdown" data-target="#">Título</a></li>
+                          <li><a href="#" rule="button" data-toggle="dropdown" data-target="#">ID</a></li>
+                          <li><a href="#" rule="button" data-toggle="dropdown" data-target="#">Palavra chave</a></li>
+                        </ul>
+                      </div><!-- /btn-group -->
+                      <button class="btn btn-default glyphicon glyphicon-search btnSearch"></button>
+                    </form>
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-2">
+                	<a href="#" class="shutdown" title="Sair do Sistema">
+                    	<span class="glyphicon glyphicon-off"></span>
+                    </a>
+                </div>
+            </div>
+            	<!-- breadbrumb -->
+            <div class="row">
+            	<div class="col-md-12 col-lg-12 col-sm-12">
+                	<ol class="breadcrumb">
+                		<li><a href="#">Caminho do pão</a></li>
+                		<li><a href="#">Item dois do breadcrumb</a></li>
+                        <li class="active">Item ativo</li>
+                	</ol>
+                </div>
+            </div>
+           	<!-- /breadbrumb -->
+        </header>
+        
+    </div>
+    </div>
+    <!-- /cabecalho -->
+    
+    <!--  -->
+    <div class="row">
+    	<aside class="col-md-3 col-lg-3 col-sm-3">
+        	<div class="perfil">
+            	<ul>
+            		<li class="foto"><img src="images/thumb.jpg" class="img-circle" alt="Nome do usuário"></li>
+            		<li class="texto">
+                    	<a href="#"><strong>Reginaldo Lee</strong></a><br>
+                        <small>Super Administrador</small><br>
+                        <small>IP: 172.27.193.80</small>
+                    </li>
+            	</ul>
+            </div>
+            <hr>
+            <!-- MENU -->
+            <nav>
+             <div class="btn-group-vertical">        
+                <div class="btn-group btn-group-justified">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle text-left" type="button" id="btnGroupVerticalDrop1">
+                  	<span class="glyphicon glyphicon-pencil"></span>
+                    Conteúdo
+                    <span class="caret"></span>
+                  </button>
+                  <ul aria-labelledby="btnGroupVerticalDrop1" role="menu" class="dropdown-menu">
+                    <li><a href="#">SEO</a></li>
+                  </ul>
+                </div>
+                <div class="btn-group btn-group-justified">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button" id="btnGroupVerticalDrop2">
+                  	<span class="glyphicon glyphicon-tasks"></span>
+                    Cadastro
+                    <span class="caret"></span>
+                  </button>
+                  <ul aria-labelledby="btnGroupVerticalDrop2" role="menu" class="dropdown-menu">
+                    <li><a href="#">Colunista</a></li>
+                    <li><a href="#">Menu Corporativo</a></li>
+                    <li><a href="#">Destaque Topo</a></li>
+                    <li><a href="#">Grupo</a></li>
+                    <li><a href="#">Canal</a></li>
+                    <li><a href="#">Seção</a></li>
+                  </ul>
+                </div>
+                <div class="btn-group btn-group-justified">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button" id="btnGroupVerticalDrop3">
+                  	<span class="glyphicon glyphicon-font"></span>
+                    Notícia
+                    <span class="caret"></span>
+                  </button>
+                  <ul aria-labelledby="btnGroupVerticalDrop3" role="menu" class="dropdown-menu">
+                    <li><a href="#">Notícia de Canal</a></li>
+                    <li><a href="#">Tag</a></li>
+                  </ul>
+                </div>
+                <div class="btn-group btn-group-justified">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button" id="btnGroupVerticalDrop4">
+                  	<span class="glyphicon glyphicon-hand-up"></span>
+                    Interatividade
+                    <span class="caret"></span>
+                  </button>
+                  <ul aria-labelledby="btnGroupVerticalDrop4" role="menu" class="dropdown-menu">
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Mídia</a></li>
+                  </ul>
+                </div>
+                <div class="btn-group btn-group-justified">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button" id="btnGroupVerticalDrop4">
+                  	<span class="glyphicon glyphicon-cog"></span>
+                    Configurações
+                    <span class="caret"></span>
+                  </button>
+                  <ul aria-labelledby="btnGroupVerticalDrop4" role="menu" class="dropdown-menu">
+                    <li><a href="#">Usuário</a></li>
+                    <li><a href="#">Meus Dados</a></li>
+                    <li><a href="#">Ação</a></li>
+                    <li><a href="#">Módulo</a></li>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Palavrão</a></li>
+                  </ul>
+                </div>
+      		</div>
+
+            </nav>
+            
+            <!-- /MENU -->            
+        </aside>
+        <!-- Content -->
+    	<div class="col-md-9 col-lg-9 col-sm-9">
+        	<div class="row">
+            <!-- Coluna 1 -->
+            	<div class="col-md-8 col-lg-8 col-sm-8">
+                	<div class="panel panel-primary">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">Últimas notícias inseridas</h3>
+                        </div>
+                        <div class="panel-body">
+                          <table class="table table-bordered">
+                          	<thead>
+                          		<tr>
+                          			<th>Canal</th>
+                          			<th>Título</th>
+                          			<th>Ações</th>
+                          		</tr>
+                          	</thead> 
+                            <tfoot>
+                            	<tr>
+                            		<td colspan="3">
+                                    	<div class="text-center">
+                                        <ul class="pagination">
+                                            <li class="disabled"><span>&laquo;</span></li>
+                                            <li class="active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">6</a></li>
+                                            <li><a href="#"><span>&raquo;</span></a></li>
+                                      </ul>
+                                      </div>
+                                    </td>
+                            	</tr>
+                            </tfoot>
+                          	<tbody>
+                          		<tr>
+                          			<td>Canal 1</td>
+                          			<td>Título A</td>
+                          			<td><button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-ban-circle"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-folder-open"></span></button></td>
+                          		</tr>
+                          		<tr>
+                          			<td>Canal do Canal</td>
+                          			<td>Título B</td>
+                          			<td><button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-ban-circle"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-folder-open"></span></button></td>
+                          		</tr>
+                          		<tr>
+                          			<td>Canal de Notícias</td>
+                          			<td>Título C</td>
+                          			<td><button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-ban-circle"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-folder-open"></span></button></td>
+                          		</tr>
+                          		<tr>
+                          			<td>Canal de Esportes</td>
+                          			<td>Título D</td>
+                          			<td><button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-ban-circle"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-folder-open"></span></button></td>
+                          		</tr>
+                          		<tr>
+                          			<td>Canal Educativo</td>
+                          			<td>Título E</td>
+                          			<td><button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-ban-circle"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-folder-open"></span></button></td>
+                          		</tr>
+                          		<tr>
+                          			<td>Canal Online</td>
+                          			<td>Título F</td>
+                          			<td><button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-ban-circle"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-folder-open"></span></button></td>
+                          		</tr>
+                          		<tr>
+                          		  <td>Canal de Esportes</td>
+                          			<td>Título G</td>
+                          			<td><button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-ban-circle"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-folder-open"></span></button></td>
+                          		</tr>
+                          		<tr>
+                          		  <td>Canal Educativo</td>
+                          			<td>Título H</td>
+                          			<td><button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-ban-circle"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-folder-open"></span></button></td>
+                          		</tr>
+                          		<tr>
+                          		  <td>Canal Online</td>
+                          			<td>Título I</td>
+                          			<td><button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-ban-circle"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-folder-open"></span></button></td>
+                          		</tr>
+                          		<tr>
+                          		  <td>Canal de Notícias</td>
+                          			<td>Título J</td>
+                          			<td><button class="btn btn-success btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-ban-circle"></span></button> <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-folder-open"></span></button></td>
+                          		</tr>
+                          	</tbody>
+                          </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">Últimas comentários</h3>
+                        </div>
+                        
+                        <div class="panel-body">
+							<ul class="list-group">
+                            	<li class="list-group-item">
+                            		<h4 class="list-group-item-heading">Header 1</h4>
+                            		<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur cras amet.</p>
+                            	</li>
+                            	<li class="list-group-item">
+                            		<h4 class="list-group-item-heading">Header 2</h4>
+                            		<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur cras amet.</p>
+                            	</li>
+                            	<li class="list-group-item">
+                            		<h4 class="list-group-item-heading">Header 3</h4>
+                            		<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur cras amet.</p>
+                            	</li>
+                            	<li class="list-group-item">
+                            		<h4 class="list-group-item-heading">Header 4</h4>
+                            		<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur cras amet.</p>
+                            	</li>
+                            	<li class="list-group-item">
+                            		<h4 class="list-group-item-heading">Header 5</h4>
+                            		<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur cras amet.</p>
+                            	</li>
+                            	<li class="list-group-item">
+                            		<h4 class="list-group-item-heading">Header 6</h4>
+                            		<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur cras amet.</p>
+                            	</li>
+                            	<li class="list-group-item">
+                            		<h4 class="list-group-item-heading">Header 7</h4>
+                            		<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur cras amet.</p>
+                            	</li>
+                            	<li class="list-group-item">
+                            		<h4 class="list-group-item-heading">Header 8</h4>
+                            		<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur cras amet.</p>
+                            	</li>
+                            </ul>
+
+                        </div>
+                    </div>                
+                </div>
+            <!-- /Coluna 1 -->
+            <!-- Coluna 2 -->
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                	 <div class="panel panel-warning">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">Atalhos</h3>
+                        </div>
+                        <div class="panel-body">
+							<ul class="list-group">
+								<li class="list-group-item"><a href="nova-materia.html">Nova Matéria</a><span class="badge"><span class="glyphicon glyphicon-edit"></span></span></li>
+								<li class="list-group-item"><a href="#">Nova Coluna</a><span class="badge"><span class="glyphicon glyphicon-saved"></span></span></li>
+								<li class="list-group-item"><a href="#">Editar Home Portal</a><span class="badge"><span class="glyphicon glyphicon-list-alt"></span></span></li>
+							</ul>
+                        </div>
+                    </div>
+                     <div class="panel panel-primary">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">Editar Home do Canal</h3>
+                        </div>
+                        <div class="panel-body">
+                          	<div class="list-group">
+                          		<a href="#" class="list-group-item">Vá para o Canal 1</a>
+                          		<a href="#" class="list-group-item">Vá para o Canal 2</a>
+                          		<a href="#" class="list-group-item">Vá para o Canal 3</a>
+                          		<a href="#" class="list-group-item">Vá para o Canal 4</a>
+                          		<a href="#" class="list-group-item">Vá para o Canal 5</a>
+                          		<a href="#" class="list-group-item">Vá para o Canal 6</a>
+                          		<a href="#" class="list-group-item">Vá para o Canal 7</a>
+                          		<a href="#" class="list-group-item">Vá para o Canal 8</a>
+                          		<a href="#" class="list-group-item">Vá para o Canal 9</a>
+                          		<a href="#" class="list-group-item">Vá para o Canal 10</a>
+                          	</div>
+                        </div>
+                    </div>
+                </div>
+            <!-- Coluna 2 -->
+            </div>
+        </div>
+        <!-- /Content -->
+    </div>
+    <!-- / -->
+</div>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

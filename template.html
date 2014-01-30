@@ -1,0 +1,173 @@
+﻿<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap3.css">
+
+<link rel="stylesheet" href="css/default.cockpit.css">
+<title>Cockpit</title>
+</head>
+
+<body>
+<div class="container">
+    <!-- /cabecalho -->
+    <div class="row">
+    <div class="col-md-3 col-lg-3 col-sm-3 logo">
+    	<header>
+        	<a href="#"><img src="images/logo-ne10.png" alt="Logo NE10 - Voltar à primeira pàgina" class="img-responsive"></a>
+        </header>
+        
+    </div>
+    <div class="col-md-9 col-lg-9 col-sm-9">
+    	<header class="header">
+        	<div class="row timebar">
+            	<span class="col-md-4"><span class="glyphicon glyphicon-calendar"></span> Recife, 22 de janeiro de 2014.</span>
+                <span class="col-md-4"><span class="glyphicon glyphicon-time"></span> Último acesso às 18:20</span>
+            </div>
+            <div class="row searchbar">
+            	<div class="col-md-2 col-lg-2 col-sm-2">
+                	<a href="#" class="home"><span class="glyphicon glyphicon-home"></span> Home</a>
+                </div>
+                <div class="col-md-8 col-lg-8 col-sm-8">
+                    <form action="#"  class="input-group">                   
+                    <input type="text" class="form-control">
+                      <div class="input-group-btn"> <!-- btn-group -->
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Pesquisar <span class="caret"></span></button>
+                        <ul class="dropdown-menu pull-right" data-toggle="dropdown" role="menu" aria-labelledby="dLabel">
+                          <li><a href="#" id="dLabel" rule="button" data-toggle="dropdown" data-target="#">Título</a></li>
+                          <li><a href="#" rule="button" data-toggle="dropdown" data-target="#">ID</a></li>
+                          <li><a href="#" rule="button" data-toggle="dropdown" data-target="#">Palavra chave</a></li>
+                        </ul>
+                      </div><!-- /btn-group -->
+                      <button class="btn btn-default glyphicon glyphicon-search btnSearch"></button>
+                    </form>
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-2">
+                	<a href="#" class="shutdown" title="Sair do Sistema">
+                    	<span class="glyphicon glyphicon-off"></span>
+                    </a>
+                </div>
+            </div>
+            	<!-- breadbrumb -->
+            <div class="row">
+            	<div class="col-md-12 col-lg-12 col-sm-12">
+                	<ol class="breadcrumb">
+                		<li><a href="#">Notícia</a></li>
+                        <li class="active">Cadastrar</li>
+                	</ol>
+                </div>
+            </div>
+           	<!-- /breadbrumb -->
+        </header>
+        
+    </div>
+    </div>
+    <!-- /cabecalho -->
+    
+    <!--  -->
+    <div class="row">
+    	<aside class="col-md-3 col-lg-3 col-sm-3">
+        	<div class="perfil">
+            	<ul>
+            		<li class="foto"><img src="images/thumb.jpg" class="img-circle" alt="Nome do usuário"></li>
+            		<li class="texto">
+                    	<a href="#"><strong>Reginaldo Lee</strong></a><br>
+                        <small>Super Administrador</small><br>
+                        <small>IP: 172.27.193.80</small>
+                    </li>
+            	</ul>
+            </div>
+            <hr>
+            <!-- MENU -->
+            <nav>
+             <div class="btn-group-vertical">        
+                <div class="btn-group btn-group-justified">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle text-left" type="button" id="btnGroupVerticalDrop1">
+                  	<span class="glyphicon glyphicon-pencil"></span>
+                    Conteúdo
+                    <span class="caret"></span>
+                  </button>
+                  <ul aria-labelledby="btnGroupVerticalDrop1" role="menu" class="dropdown-menu">
+                    <li><a href="#">SEO</a></li>
+                  </ul>
+                </div>
+                <div class="btn-group btn-group-justified">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button" id="btnGroupVerticalDrop2">
+                  	<span class="glyphicon glyphicon-tasks"></span>
+                    Cadastro
+                    <span class="caret"></span>
+                  </button>
+                  <ul aria-labelledby="btnGroupVerticalDrop2" role="menu" class="dropdown-menu">
+                    <li><a href="#">Colunista</a></li>
+                    <li><a href="#">Menu Corporativo</a></li>
+                    <li><a href="#">Destaque Topo</a></li>
+                    <li><a href="#">Grupo</a></li>
+                    <li><a href="#">Canal</a></li>
+                    <li><a href="#">Seção</a></li>
+                  </ul>
+                </div>
+                <div class="btn-group btn-group-justified">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button" id="btnGroupVerticalDrop3">
+                  	<span class="glyphicon glyphicon-font"></span>
+                    Notícia
+                    <span class="caret"></span>
+                  </button>
+                  <ul aria-labelledby="btnGroupVerticalDrop3" role="menu" class="dropdown-menu">
+                    <li><a href="#">Notícia de Canal</a></li>
+                    <li><a href="#">Tag</a></li>
+                  </ul>
+                </div>
+                <div class="btn-group btn-group-justified">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button" id="btnGroupVerticalDrop4">
+                  	<span class="glyphicon glyphicon-hand-up"></span>
+                    Interatividade
+                    <span class="caret"></span>
+                  </button>
+                  <ul aria-labelledby="btnGroupVerticalDrop4" role="menu" class="dropdown-menu">
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Mídia</a></li>
+                  </ul>
+                </div>
+                <div class="btn-group btn-group-justified">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle" type="button" id="btnGroupVerticalDrop4">
+                  	<span class="glyphicon glyphicon-cog"></span>
+                    Configurações
+                    <span class="caret"></span>
+                  </button>
+                  <ul aria-labelledby="btnGroupVerticalDrop4" role="menu" class="dropdown-menu">
+                    <li><a href="#">Usuário</a></li>
+                    <li><a href="#">Meus Dados</a></li>
+                    <li><a href="#">Ação</a></li>
+                    <li><a href="#">Módulo</a></li>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Palavrão</a></li>
+                  </ul>
+                </div>
+      		</div>
+
+            </nav>
+            
+            <!-- /MENU -->            
+        </aside>
+        <!-- Content -->
+    	<div class="col-md-9 col-lg-9 col-sm-9">
+        	<div class="row">
+            
+            	<div class="col-md-12 col-lg-12 col-sm12">
+                	
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+        <!-- /Content -->
+    </div>
+    <!-- / -->
+</div>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

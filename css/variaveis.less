@@ -1,0 +1,30 @@
+// Variaveis
+@primary-color:#d7d9dc;
+@secund-color:#eaecf0;
+
+// cor de font padrao
+@font-color:#7c7c7c;
+@secund-fcolor:#a9a9a9;
+
+.border(@border-width){
+    border:@border-width solid @primary-color;
+}
+.margin(@pxh:10px, @pxv:5px){
+    margin:@pxh @pxv;
+}
+.margin(@px){
+    margin:@px;
+}
+.marginh(@px){
+    margin-top:@px;
+    margin-bottom:@px
+}
+.padding(@pad){
+    padding:@pad
+}
+.border-radius(@radius){
+    border-radius:@radius;
+    -webkit-border-radius:@radius;
+    -o-border-radius:@radius;
+    -moz-border-radius:@radius;
+}
