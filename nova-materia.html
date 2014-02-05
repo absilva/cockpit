@@ -197,7 +197,7 @@
                     <div class="row">
                     	<div class="col-lg-4 col-md-4">
                         	<label for="txtChapeu">Chapéu</label><br>
-                            <input type="text" class="form-control" id="txtChapeu" id="txtChapeu" required>
+                            <input type="text" class="form-control" name="txtChapeu" id="txtChapeu" required title="Campo obrigatório">
                         </div>
                         <div class="col-lg-4 col-md-4">
                         	<label for="txtProced">Procedência</label><br>
@@ -233,7 +233,7 @@
                     </div>
                     <div class="row">
                     	<div class="col-lg-3 col-md-3">
-                        	<label for="txtTitulo">Tíulo</label><br>
+                        	<label for="txtTitulo">Título</label><br>
                         	<input type="text" name="txtTitulo" id="txtTitulo" class="form-control" required>
                         </div>
                     	<div class="col-lg-3 col-md-3">
@@ -341,13 +341,158 @@
                                         
                                     </div>
                                 	<div class="tab-pane" id="tabMidias">
-                                    
+                                    	<div class="row">
+                                        	<div class="col-lg-5 col-md-5">
+                                            	<label for="txtSearchGaleria">Galeria</label><br>
+                                                <input type="search" name="txtSearchGaleria" id="txtSearchGaleria" class="form-control">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                        	<div class="col-lg-8 col-md-8">
+                                            	<label for="">Vincular Mídias</label><br>
+                                                <div class="input-group">
+                                                  <input type="text" name="txtVincularMidias" id="txtVincularMidias" class="form-control">
+                                                  <span class="input-group-btn">
+                                                    <button class="btn btn-info" type="button">Adicionar</button>
+                                                  </span>
+                                                </div>
+                                                <br>
+                                                <table class="table table-bordered table-condensed">
+                                                	<thead>
+                                                		<tr>
+                                                			<th>Mídia</th>
+                                                			<th>Ação</th>
+                                                		</tr>
+                                                	</thead>
+                                                	<tbody>
+                                                		<tr>
+                                                			<td>Mdia 1</td>
+                                                			<td></td>
+                                                		</tr>
+                                                		<tr>
+                                                			<td>Mídia 2</td>
+                                                			<td></td>
+                                                		</tr>
+                                                		<tr>
+                                                			<td>Mídia 3</td>
+                                                			<td></td>
+                                                		</tr>
+                                                		<tr>
+                                                			<td>Mídia 4</td>
+                                                			<td></td>
+                                                		</tr>
+                                                		<tr>
+                                                			<td>Mídia 5</td>
+                                                			<td></td>
+                                                		</tr>
+                                                	</tbody>
+                                                </table>
+                                            </div>
+                                        </div>										                                        
                                     </div>
                                 </div>
+                                
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#MaisNoticias" data-toggle="tab">Mais notícias</a></li>
+                            <li><a href="#ContinueLendo" data-toggle="tab">Continue lendo (matérias vinculadas)</a></li>
+                            <li><a href="#VincularTags" data-toggle="tab" href="">Vincular Tags *</a></li>
+                        </ul>
+                        <div class="tab-content">
+                        <br>
+                        	<div class="tab-pane active" id="MaisNoticias">
+                            	<label for="">Vincular Mídias</label><br>
+                                                <div class="input-group">
+                                                  <input type="text" name="txtVincularMidias" id="txtVincularMidias" class="form-control">
+                                                  <span class="input-group-btn">
+                                                    <button class="btn btn-info" type="button">Adicionar</button>
+                                                  </span>
+                                                </div>
+                                                <br>
+                                                <table class="table table-bordered table-condensed">
+                                                	<thead>
+                                                		<tr>
+                                                			<th>Mídia</th>
+                                                			<th>Ação</th>
+                                                		</tr>
+                                                	</thead>
+                                                	<tbody>
+                                                		<tr>
+                                                			<td>Mdia 1</td>
+                                                			<td></td>
+                                                		</tr>
+                                                		<tr>
+                                                			<td>Mídia 2</td>
+                                                			<td></td>
+                                                		</tr>
+                                                		<tr>
+                                                			<td>Mídia 3</td>
+                                                			<td></td>
+                                                		</tr>
+                                                		<tr>
+                                                			<td>Mídia 4</td>
+                                                			<td></td>
+                                                		</tr>
+                                                		<tr>
+                                                			<td>Mídia 5</td>
+                                                			<td></td>
+                                                		</tr>
+                                                	</tbody>
+                                                </table>
+                            </div>
+                            <div class="tab-pane" id="ContinueLendo">
+                            <label for="">Vincular Mídias</label><br>
+                                                <div class="input-group">
+                                                  <input type="text" name="txtVincularMidias" id="txtVincularMidias" class="form-control">
+                                                  <span class="input-group-btn">
+                                                    <button class="btn btn-info" type="button">Adicionar</button>
+                                                  </span>
+                                                </div>
+                                                <br>
+                                                <table class="table table-bordered table-condensed">
+                                                	<thead>
+                                                		<tr>
+                                                			<th>Mídia</th>
+                                                			<th>Ação</th>
+                                                		</tr>
+                                                	</thead>
+                                                	<tbody>
+                                                		<tr>
+                                                			<td>Mdia 1</td>
+                                                			<td></td>
+                                                		</tr>
+                                                		<tr>
+                                                			<td>Mídia 2</td>
+                                                			<td></td>
+                                                		</tr>
+                                                		<tr>
+                                                			<td>Mídia 3</td>
+                                                			<td></td>
+                                                		</tr>
+                                                		<tr>
+                                                			<td>Mídia 4</td>
+                                                			<td></td>
+                                                		</tr>
+                                                		<tr>
+                                                			<td>Mídia 5</td>
+                                                			<td></td>
+                                                		</tr>
+                                                	</tbody>
+                                                </table>
+                            </div>
+                            <div class="tab-pane" id="VincularTags">
+                            C
+                            </div>
+                        </div>
+                    </div>
+                </div>
                     <!-- botoes de acao -->
                     <br>
                     <div class="well well-sm text-right">
@@ -368,8 +513,41 @@
 </div>
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/typeahead.min.js"></script>
 <script type="text/javascript">
-
+$(function(){		
+	$("#txtSearchGaleria").typeahead({
+		name:"Portuguese",
+		local:["one","two", "three", "four", "five", "six", "seven", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two"]
+	});
+	
+	/*Validator*/
+	$('form').validate({
+        rules: {
+            txtChapeu: {
+                minlength: 20,
+                maxlength: 60,
+                required: true
+            }
+        },
+        highlight: function(element) {
+            $(element).closest('.form-group').addClass('has-error');
+        },
+        unhighlight: function(element) {
+            $(element).closest('.form-group').removeClass('has-error');
+        },
+        errorElement: 'span',
+        errorClass: 'help-block',
+        errorPlacement: function(error, element) {
+            if(element.parent('.input-group').length) {
+                error.insertAfter(element.parent());
+            } else {
+                error.insertAfter(element);
+            }
+        }
+    });
+	
+});
 </script>
 </body>
 </html>
