@@ -351,43 +351,8 @@
                                         <div class="row">
                                         	<div class="col-lg-8 col-md-8">
                                             	<label for="">Vincular Mídias</label><br>
-                                                <div class="input-group">
-                                                  <input type="text" name="txtVincularMidias" id="txtVincularMidias" class="form-control">
-                                                  <span class="input-group-btn">
-                                                    <button class="btn btn-info" type="button">Adicionar</button>
-                                                  </span>
-                                                </div>
+                                                  <input type="text" name="txtVincularMidias" id="txtVincularMidias" class="form-control" placeholder="Digite Mídia">
                                                 <br>
-                                                <table class="table table-bordered table-condensed">
-                                                	<thead>
-                                                		<tr>
-                                                			<th>Mídia</th>
-                                                			<th>Ação</th>
-                                                		</tr>
-                                                	</thead>
-                                                	<tbody>
-                                                		<tr>
-                                                			<td>Mdia 1</td>
-                                                			<td></td>
-                                                		</tr>
-                                                		<tr>
-                                                			<td>Mídia 2</td>
-                                                			<td></td>
-                                                		</tr>
-                                                		<tr>
-                                                			<td>Mídia 3</td>
-                                                			<td></td>
-                                                		</tr>
-                                                		<tr>
-                                                			<td>Mídia 4</td>
-                                                			<td></td>
-                                                		</tr>
-                                                		<tr>
-                                                			<td>Mídia 5</td>
-                                                			<td></td>
-                                                		</tr>
-                                                	</tbody>
-                                                </table>
                                             </div>
                                         </div>										                                        
                                     </div>
@@ -488,7 +453,7 @@
                                                 </table>
                             </div>
                             <div class="tab-pane" id="VincularTags">
-                            C
+                            
                             </div>
                         </div>
                     </div>
@@ -511,41 +476,45 @@
     </div>
     <!-- / -->
 </div>
+<link rel="stylesheet" href="css/token-input.css">
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/typeahead.min.js"></script>
+<script type="text/javascript" src="js/jquery.tokeninput.js"></script>
 <script type="text/javascript">
 $(function(){		
-	$("#txtSearchGaleria").typeahead({
+	/*$("#txtSearchGaleria").typeahead({
 		name:"Portuguese",
 		local:["one","two", "three", "four", "five", "six", "seven", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two"]
-	});
-	
-	/*Validator*/
-	$('form').validate({
-        rules: {
-            txtChapeu: {
-                minlength: 20,
-                maxlength: 60,
-                required: true
-            }
-        },
-        highlight: function(element) {
-            $(element).closest('.form-group').addClass('has-error');
-        },
-        unhighlight: function(element) {
-            $(element).closest('.form-group').removeClass('has-error');
-        },
-        errorElement: 'span',
-        errorClass: 'help-block',
-        errorPlacement: function(error, element) {
-            if(element.parent('.input-group').length) {
-                error.insertAfter(element.parent());
-            } else {
-                error.insertAfter(element);
-            }
-        }
-    });
+	});*/
+	$("#txtSearchGaleria").tokenInput([
+		{id: 7, name: "Ruby"},
+		{id: 11, name: "Python"},
+		{id: 13, name: "JavaScript"},
+		{id: 17, name: "ActionScript"},
+		{id: 19, name: "Scheme"},
+		{id: 23, name: "Lisp"},
+		{id: 29, name: "C#"},
+		{id: 31, name: "Fortran"},
+		{id: 37, name: "Visual Basic"},
+		{id: 41, name: "C"},
+		{id: 43, name: "C++"},
+		{id: 47, name: "Java"}
+     ]);
+	 
+	 $("#txtVincularMidias").tokenInput([
+		{id: 7, name: "Mídia A"},
+		{id: 11, name: "Mídia B"},
+		{id: 13, name: "Mídia C"},
+		{id: 17, name: "Mídia D"},
+		{id: 19, name: "Mídia E"},
+		{id: 23, name: "Mídia F"},
+		{id: 29, name: "Mídia G"},
+		{id: 31, name: "Mídia H"},
+		{id: 37, name: "Mídia I"},
+		{id: 41, name: "Mídia J"},
+		{id: 43, name: "Mídia K"},
+		{id: 47, name: "Mídia L"}
+     ]);
 	
 });
 </script>
