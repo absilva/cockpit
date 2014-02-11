@@ -101,7 +101,7 @@
                   </button>
                   <ul aria-labelledby="btnGroupVerticalDrop2" role="menu" class="dropdown-menu">
                     <li><a href="#">Colunista</a></li>
-                    <li><a href="#">Menu Corporativo</a></li>
+                    <li><a href="menu-corporativo.html">Menu Corporativo</a></li>
                     <li><a href="#">Destaque Topo</a></li>
                     <li><a href="#">Grupo</a></li>
                     <li><a href="#">Canal</a></li>
@@ -115,7 +115,7 @@
                     <span class="caret"></span>
                   </button>
                   <ul aria-labelledby="btnGroupVerticalDrop3" role="menu" class="dropdown-menu">
-                    <li><a href="#">Notícia de Canal</a></li>
+                    <li><a href="nova-materia.html">Notícia de Canal</a></li>
                     <li><a href="#">Tag</a></li>
                   </ul>
                 </div>
@@ -373,87 +373,19 @@
                         <div class="tab-content">
                         <br>
                         	<div class="tab-pane active" id="MaisNoticias">
-                            	<label for="">Vincular Mídias</label><br>
-                                                <div class="input-group">
-                                                  <input type="text" name="txtVincularMidias" id="txtVincularMidias" class="form-control">
-                                                  <span class="input-group-btn">
-                                                    <button class="btn btn-info" type="button">Adicionar</button>
-                                                  </span>
-                                                </div>
+                            	<label for="txtMaisNoticias">Mais Notícias</label><br>
+                                                  <input type="text" name="txtMaisNoticias" id="txtMaisNoticias" class="form-control">
                                                 <br>
-                                                <table class="table table-bordered table-condensed">
-                                                	<thead>
-                                                		<tr>
-                                                			<th>Mídia</th>
-                                                			<th>Ação</th>
-                                                		</tr>
-                                                	</thead>
-                                                	<tbody>
-                                                		<tr>
-                                                			<td>Mdia 1</td>
-                                                			<td></td>
-                                                		</tr>
-                                                		<tr>
-                                                			<td>Mídia 2</td>
-                                                			<td></td>
-                                                		</tr>
-                                                		<tr>
-                                                			<td>Mídia 3</td>
-                                                			<td></td>
-                                                		</tr>
-                                                		<tr>
-                                                			<td>Mídia 4</td>
-                                                			<td></td>
-                                                		</tr>
-                                                		<tr>
-                                                			<td>Mídia 5</td>
-                                                			<td></td>
-                                                		</tr>
-                                                	</tbody>
-                                                </table>
                             </div>
                             <div class="tab-pane" id="ContinueLendo">
-                            <label for="">Vincular Mídias</label><br>
-                                                <div class="input-group">
-                                                  <input type="text" name="txtVincularMidias" id="txtVincularMidias" class="form-control">
-                                                  <span class="input-group-btn">
-                                                    <button class="btn btn-info" type="button">Adicionar</button>
-                                                  </span>
-                                                </div>
+                            <label for="txtVincularMaterias">Vincular Matérias</label><br>
+                                                  <input type="text" name="txtVincularMaterias" id="txtVincularMaterias" class="form-control">
                                                 <br>
-                                                <table class="table table-bordered table-condensed">
-                                                	<thead>
-                                                		<tr>
-                                                			<th>Mídia</th>
-                                                			<th>Ação</th>
-                                                		</tr>
-                                                	</thead>
-                                                	<tbody>
-                                                		<tr>
-                                                			<td>Mdia 1</td>
-                                                			<td></td>
-                                                		</tr>
-                                                		<tr>
-                                                			<td>Mídia 2</td>
-                                                			<td></td>
-                                                		</tr>
-                                                		<tr>
-                                                			<td>Mídia 3</td>
-                                                			<td></td>
-                                                		</tr>
-                                                		<tr>
-                                                			<td>Mídia 4</td>
-                                                			<td></td>
-                                                		</tr>
-                                                		<tr>
-                                                			<td>Mídia 5</td>
-                                                			<td></td>
-                                                		</tr>
-                                                	</tbody>
-                                                </table>
                             </div>
                             <div class="tab-pane" id="VincularTags">
-                            
+                            	<label for="">Vincular Tags</label><br>                                                
+                                                  <input type="text" name="txtVincularTags" id="txtVincularTags" class="form-control">
+                                                <br>
                             </div>
                         </div>
                     </div>
@@ -515,6 +447,30 @@ $(function(){
 		{id: 43, name: "Mídia K"},
 		{id: 47, name: "Mídia L"}
      ]);
+	 
+	 $("#txtMaisNoticias").tokenInput([
+		{id:1, name:"Notícia A"},
+		{id:2, name:"Notícia B"},
+		{id:3, name:"Notícia C"},
+		{id:4, name:"Notícia D"},
+		{id:5, name:"Notícia E"}
+	 ]);
+	 
+	 $("#txtVincularMaterias").tokenInput([
+		{id:1, name:"Matéria A"},
+		{id:2, name:"Matéria B"},
+		{id:3, name:"Matéria C"},
+		{id:4, name:"Matéria D"},
+		{id:5, name:"Matéria E"}
+	 ]);
+	 
+	 $("#txtVincularTags").tokenInput([
+		{id:1, name:"Tag A"},
+		{id:2, name:"Tag B"},
+		{id:3, name:"Tag C"},
+		{id:4, name:"Tag D"},
+		{id:5, name:"Tag E"}
+	 ]);
 	
 });
 </script>
