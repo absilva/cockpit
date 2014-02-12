@@ -3,6 +3,14 @@
 textarea {
   resize: none;
 }
+ul.row {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+input:invalid {
+  outline: 0;
+}
 /* Header */
 .timebar {
   height: 50px;
@@ -99,6 +107,9 @@ nav .btn-group-vertical .caret {
 /*Clases Globais*/
 .borda {
   border: 1px solid #d7d9dc;
+}
+.well.ordenar-menu li a {
+  cursor: move;
 }
 /* Autocomplete */
 .typeahead,

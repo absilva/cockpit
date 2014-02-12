@@ -55,7 +55,7 @@
             	<div class="col-md-12 col-lg-12 col-sm-12">
                 	<ol class="breadcrumb">
                 		<li><a href="#">Cadastro</a></li>
-                        <li class="active">Menu corporativo</li>
+                        <li class="active">Destaque topo</li>
                 	</ol>
                 </div>
             </div>
@@ -101,7 +101,7 @@
                   </button>
                   <ul aria-labelledby="btnGroupVerticalDrop2" role="menu" class="dropdown-menu">
                     <li><a href="#">Colunista</a></li>
-                    <li><a href="menu-corporativo.html">Menu Corporativo</a></li>
+                    <li><a href="#">Menu Corporativo</a></li>
                     <li><a href="destaque-topo.html">Destaque Topo</a></li>
                     <li><a href="#">Grupo</a></li>
                     <li><a href="#">Canal</a></li>
@@ -115,7 +115,7 @@
                     <span class="caret"></span>
                   </button>
                   <ul aria-labelledby="btnGroupVerticalDrop3" role="menu" class="dropdown-menu">
-                    <li><a href="nova-materia.html">Notícia de Canal</a></li>
+                    <li><a href="#">Notícia de Canal</a></li>
                     <li><a href="#">Tag</a></li>
                   </ul>
                 </div>
@@ -156,50 +156,33 @@
         	<div class="row">
             
             	<div class="col-md-12 col-lg-12 col-sm12">
-                	<div class="well well-sm text-right">
-                    	<input type="button" class="btn btn-info" value="Adicionar" onClick="location.href='adicionar-menucorporativo.html'">
-                       	<input type="button" class="btn btn-info" value="Ordenar Menu" onClick="location.href='ordenar-menu.html'">
-                        <input type="button" value="Voltar" class="btn btn-warning">
-                    </div>
-                    <h1>Menu corporativo</h1>
-                    <table class="table table-bordered table-hover table-condensed">
-                    	<thead>
-                    		<tr>
-                    			<th class="col-sm-4"><a href="#">Nome</a></th>
-                    			<th class="col-sm-7"><a href="#">Link</a></th>
-                    			<th class="col-sm-1">Ações</th>
-                    		</tr>
-                    	</thead>
-                    	<tbody>
-                    		<tr>
-                    			<td>1-conteudo</td>
-                    			<td>2-conteudo</td>
-                    			<td><button class="btn btn-xs btn-info" title="Editar"><span class="glyphicon glyphicon-edit"></span></button> <button class="btn btn-xs btn-danger" title="Excluir"><span class="glyphicon glyphicon-remove"></span></button></td>
-                    		</tr>
-                    		<tr>
-                    			<td>1-conteudo</td>
-                    			<td>2-conteudo</td>
-                    			<td><button class="btn btn-xs btn-info" title="Editar"><span class="glyphicon glyphicon-edit"></span></button> <button class="btn btn-xs btn-danger" title="Excluir"><span class="glyphicon glyphicon-remove"></span></button></td>
-                    		</tr>
-                    		<tr>
-                    			<td>1-conteudo</td>
-                    			<td>2-conteudo</td>
-                    			<td><button class="btn btn-xs btn-info" title="Editar"><span class="glyphicon glyphicon-edit"></span></button> <button class="btn btn-xs btn-danger" title="Excluir"><span class="glyphicon glyphicon-remove"></span></button></td>
-                    		</tr>
-                    	</tbody>
-                    </table>
-                    <div class="text-center">
-                        <ul class="pagination pagination-sm">
-                            <li class="disabled"><span>&laquo;</span></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">6</a></li>
-                            <li><a href="#"><span>&raquo;</span></a></li>
-                      </ul>
-                  </div>
+                    
+                    <form action="#" method="post">
+                    	
+                        <div class="well well-sm text-right">
+                        	<input type="submit" value="Adicionar" class="btn btn-info">
+                            <input type="reset" value="Limpar" class="btn btn-info">
+                            <input type="button" value="Voltar" class="btn btn-warning" onClick="history.back()">
+                        </div>
+                        <div class="alert alert-success">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            <p><span class="glyphicon glyphicon-ok">&nbsp;</span>Adicionado com sucesso!</p>
+                        </div>
+                        <h1>Adicionar Item de Menu</h1>
+                        <ul class="row">
+                        	<li class="col-lg-6 col-md-6">
+                        		<label for="txtNome">Nome</label>
+                        		<br>
+                        		<input type="text" name="txtNome" id="txtNome" class="form-control" required title="Necessário o preenchimento">
+                        	</li>
+                        	<li class="col-lg-6 col-md-6">
+                        		<label for="txtLink">Link</label>
+                        		<br>
+                        		<input type="url" name="txtLink" id="txtLink" class="form-control" required title="Necessário o preenchimento">
+                        	</li>
+                        </ul>
+                    </form>
+                    
                 </div>
                 
             </div>
