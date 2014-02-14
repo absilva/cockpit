@@ -66,7 +66,7 @@ input:invalid {
 /* sidebar */
 .perfil {
   display: block;
-  height: 80px;
+  height: 130px;
   margin-bottom: 15px;
 }
 .perfil ul {
@@ -78,6 +78,8 @@ input:invalid {
   float: left;
   padding-top: 5px;
   padding-bottom: 5px;
+  width: 100%;
+  text-align: center;
 }
 .perfil ul .foto {
   padding-left: 10px;

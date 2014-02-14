@@ -14,13 +14,13 @@
 <div class="container">
     <!-- /cabecalho -->
     <div class="row">
-    <div class="col-md-3 col-lg-3 col-sm-3 logo">
+    <div class="col-md-2 col-lg-2 col-sm-2 logo">
     	<header>
         	<a href="#"><img src="images/logo-ne10.png" alt="Logo NE10 - Voltar à primeira pàgina" class="img-responsive"></a>
         </header>
         
     </div>
-    <div class="col-md-9 col-lg-9 col-sm-9">
+    <div class="col-md-10 col-lg-10 col-sm-10">
     	<header class="header">
         	<div class="row timebar">
             	<span class="col-md-4"><span class="glyphicon glyphicon-calendar"></span> Recife, 22 de janeiro de 2014.</span>
@@ -68,7 +68,7 @@
     
     <!--  -->
     <div class="row">
-    	<aside class="col-md-3 col-lg-3 col-sm-3">
+    	<aside class="col-md-2 col-lg-2 col-sm-2">
         	<div class="perfil">
             	<ul>
             		<li class="foto"><img src="images/thumb.jpg" class="img-circle" alt="Nome do usuário"></li>
@@ -101,7 +101,7 @@
                   </button>
                   <ul aria-labelledby="btnGroupVerticalDrop2" role="menu" class="dropdown-menu">
                     <li><a href="#">Colunista</a></li>
-                    <li><a href="#">Menu Corporativo</a></li>
+                    <li><a href="menu-corporativo.html">Menu Corporativo</a></li>
                     <li><a href="destaque-topo.html">Destaque Topo</a></li>
                     <li><a href="#">Grupo</a></li>
                     <li><a href="#">Canal</a></li>
@@ -152,35 +152,65 @@
             <!-- /MENU -->            
         </aside>
         <!-- Content -->
-    	<div class="col-md-9 col-lg-9 col-sm-9">
+    	<div class="col-md-10 col-lg-10 col-sm-10">
         	<div class="row">
             
             	<div class="col-md-12 col-lg-12 col-sm12">
                     
-                    <form action="#" method="post">
+                    <form action="adicionar-destaque-topo.html" method="post">
                     	
                         <div class="well well-sm text-right">
                         	<input type="submit" value="Adicionar" class="btn btn-info">
-                            <input type="reset" value="Limpar" class="btn btn-info">
                             <input type="button" value="Voltar" class="btn btn-warning" onClick="history.back()">
                         </div>
-                        <div class="alert alert-success">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <p><span class="glyphicon glyphicon-ok">&nbsp;</span>Adicionado com sucesso!</p>
-                        </div>
-                        <h1>Adicionar Item de Menu</h1>
-                        <ul class="row">
-                        	<li class="col-lg-6 col-md-6">
-                        		<label for="txtNome">Nome</label>
-                        		<br>
-                        		<input type="text" name="txtNome" id="txtNome" class="form-control" required title="Necessário o preenchimento">
-                        	</li>
-                        	<li class="col-lg-6 col-md-6">
-                        		<label for="txtLink">Link</label>
-                        		<br>
-                        		<input type="url" name="txtLink" id="txtLink" class="form-control" required title="Necessário o preenchimento">
-                        	</li>
-                        </ul>
+                        <h1>Destaque de topo</h1>
+                        <br>
+                        <table class="table table-condensed">
+                        	<tbody>
+                        		<tr>
+                        			<td class="col-lg-3 col-md-3">
+                                    	<img src="images/destaque.jpg" alt="Destaque topo">
+                                    </td>
+                        			<td class="col-md-9 col-lg-9">
+                                    <strong>Status:</strong> Ativo<br>
+                                <strong>Link:</strong> www.dominio.com.br<br>
+                                <button class="btn btn-info btn-xs" title="Visualizar"><span class="glyphicon glyphicon-search"></span></button> <button class="btn btn-info btn-xs" title="Editar"><span class="glyphicon glyphicon-edit"></span></button> <button class="btn btn-danger btn-xs" title="Excluir"><span class="glyphicon glyphicon-remove"></span></button>
+                                    </td>
+                        		</tr>
+                        		<tr>
+                        			<td class="col-lg-3 col-md-3">
+                                    	<img src="images/destaque.jpg" alt="Destaque topo">
+                                    </td>
+                        			<td class="col-md-9 col-lg-9">
+                                    <strong>Status:</strong> Ativo<br>
+                                <strong>Link:</strong> www.dominio.com.br<br>
+                                <button class="btn btn-info btn-xs" title="Visualizar"><span class="glyphicon glyphicon-search"></span></button> <button class="btn btn-info btn-xs" title="Editar"><span class="glyphicon glyphicon-edit"></span></button> <button class="btn btn-danger btn-xs" title="Excluir"><span class="glyphicon glyphicon-remove"></span></button>
+                                    </td>
+                        		</tr>
+                        		<tr>
+                        			<td class="col-lg-3 col-md-3">
+                                    	<img src="images/destaque.jpg" alt="Destaque topo">
+                                    </td>
+                        			<td class="col-md-9 col-lg-9">
+                                    <strong>Status:</strong> Ativo<br>
+                                <strong>Link:</strong> www.dominio.com.br<br>
+                                <button class="btn btn-info btn-xs" title="Visualizar"><span class="glyphicon glyphicon-search"></span></button> <button class="btn btn-info btn-xs" title="Editar"><span class="glyphicon glyphicon-edit"></span></button> <button class="btn btn-danger btn-xs" title="Excluir"><span class="glyphicon glyphicon-remove"></span></button>
+                                    </td>
+                        		</tr>
+                        	</tbody>
+                        </table>
+                        <div class="text-center">
+                            <ul class="pagination">
+                                <li class="disabled"><span>&laquo;</span></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li><a href="#"><span>&raquo;</span></a></li>
+                          </ul>
+                          </div>
                     </form>
                     
                 </div>
