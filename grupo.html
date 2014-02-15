@@ -55,7 +55,7 @@
             	<div class="col-md-12 col-lg-12 col-sm-12">
                 	<ol class="breadcrumb">
                 		<li><a href="#">Cadastro</a></li>
-                        <li class="active">Destaque topo</li>
+                        <li class="active">Grupo</li>
                 	</ol>
                 </div>
             </div>
@@ -161,46 +161,117 @@
                     	
                         <div class="well well-sm text-right">
                         	<input type="submit" value="Adicionar" class="btn btn-info">
+							<input type="button" value="Ordenar" class="btn btn-info" name="btnOrdenar" id="btnOrdenar">
+                            <input type="button" value="Destacar Grupos" name="btnDestacarGrupos" id="btnDestacarGrupos" class="btn btn-info">
+                            
                             <input type="button" value="Voltar" class="btn btn-warning" onClick="history.back()">
                         </div>
-                        <h1>Destaque de topo</h1>
+                        <h1>Grupo</h1>
                         <br>
                         <table class="table table-condensed">
-                        	<tbody>
+                        	<thead>
                         		<tr>
-                        			<td class="col-lg-3 col-md-3">
-                                    	<img src="images/destaque.jpg" alt="Destaque topo">
-                                    </td>
-                        			<td class="col-md-9 col-lg-9">
-                                    <strong>Status:</strong> Ativo<br>
-                                <strong>Link:</strong> www.dominio.com.br<br>
-                                <button class="btn btn-info btn-xs" title="Visualizar"><span class="glyphicon glyphicon-search"></span></button> <button class="btn btn-info btn-xs" title="Editar"><span class="glyphicon glyphicon-edit"></span></button> <button class="btn btn-danger btn-xs" title="Excluir"><span class="glyphicon glyphicon-remove"></span></button>
-                                    </td>
+                        			<th class="col-sm-4"><a href="#">Nome</a></th>
+                        			<th class="col-sm-3"><a href="#">Tipo</a></th>
+                        			<th class="col-sm-2"><a href="#">Status</a></th>
+                        			<th class="col-sm-2">Ações</th>
                         		</tr>
-                        		<tr>
-                        			<td class="col-lg-3 col-md-3">
-                                    	<img src="images/destaque.jpg" alt="Destaque topo">
+                        	</thead>
+                            <tbody>
+                            	<tr>
+                            		<td>Grupo 1</td>
+                            		<td>Padrão</td>
+                            		<td>Ativo</td>
+                            		<td>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-search"></span></button>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-edit"></span></button>
+                                    	<button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
                                     </td>
-                        			<td class="col-md-9 col-lg-9">
-                                    <strong>Status:</strong> Ativo<br>
-                                <strong>Link:</strong> www.dominio.com.br<br>
-                                <button class="btn btn-info btn-xs" title="Visualizar"><span class="glyphicon glyphicon-search"></span></button> <button class="btn btn-info btn-xs" title="Editar"><span class="glyphicon glyphicon-edit"></span></button> <button class="btn btn-danger btn-xs" title="Excluir"><span class="glyphicon glyphicon-remove"></span></button>
+                            	</tr>
+                            	<tr>
+                            		<td>Grupo 2</td>
+                            		<td>Padrão</td>
+                            		<td>Ativo</td>
+                            		<td>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-search"></span></button>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-edit"></span></button>
+                                    	<button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
                                     </td>
-                        		</tr>
-                        		<tr>
-                        			<td class="col-lg-3 col-md-3">
-                                    	<img src="images/destaque.jpg" alt="Destaque topo">
+                            	</tr>
+                            	<tr>
+                            		<td>Grupo 3</td>
+                            		<td>Padrão</td>
+                            		<td>Ativo</td>
+                            		<td>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-search"></span></button>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-edit"></span></button>
+                                    	<button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
                                     </td>
-                        			<td class="col-md-9 col-lg-9">
-                                    <strong>Status:</strong> Ativo<br>
-                                <strong>Link:</strong> www.dominio.com.br<br>
-                                <button class="btn btn-info btn-xs" title="Visualizar"><span class="glyphicon glyphicon-search"></span></button> <button class="btn btn-info btn-xs" title="Editar"><span class="glyphicon glyphicon-edit"></span></button> <button class="btn btn-danger btn-xs" title="Excluir"><span class="glyphicon glyphicon-remove"></span></button>
+                            	</tr>
+                                <tr>
+                            		<td>Grupo 4</td>
+                            		<td>Padrão</td>
+                            		<td>Ativo</td>
+                            		<td>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-search"></span></button>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-edit"></span></button>
+                                    	<button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
                                     </td>
-                        		</tr>
-                        	</tbody>
+                            	</tr>
+                            	<tr>
+                            		<td>Grupo 5</td>
+                            		<td>Padrão</td>
+                            		<td>Ativo</td>
+                            		<td>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-search"></span></button>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-edit"></span></button>
+                                    	<button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+                                    </td>
+                            	</tr>
+                            	<tr>
+                            		<td>Grupo 6</td>
+                            		<td>Padrão</td>
+                            		<td>Ativo</td>
+                            		<td>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-search"></span></button>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-edit"></span></button>
+                                    	<button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+                                    </td>
+                            	</tr>
+                                <tr>
+                            		<td>Grupo 7</td>
+                            		<td>Padrão</td>
+                            		<td>Ativo</td>
+                            		<td>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-search"></span></button>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-edit"></span></button>
+                                    	<button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+                                    </td>
+                            	</tr>
+                            	<tr>
+                            		<td>Grupo 8</td>
+                            		<td>Padrão</td>
+                            		<td>Ativo</td>
+                            		<td>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-search"></span></button>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-edit"></span></button>
+                                    	<button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+                                    </td>
+                            	</tr>
+                            	<tr>
+                            		<td>Grupo 9</td>
+                            		<td>Padrão</td>
+                            		<td>Ativo</td>
+                            		<td>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-search"></span></button>
+                                    	<button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-edit"></span></button>
+                                    	<button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+                                    </td>
+                            	</tr>
+                            </tbody>
                         </table>
                         <div class="text-center">
-                            <ul class="pagination">
+                            <ul class="pagination pagination-sm">
                                 <li class="disabled"><span>&laquo;</span></li>
                                 <li class="active"><a href="#">1</a></li>
                                 <li><a href="#">2</a></li>
