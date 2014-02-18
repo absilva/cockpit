@@ -56,7 +56,7 @@
                 	<ol class="breadcrumb">
                 		<li><a href="#">Cadastro</a></li>
                         <li><a href="#">Grupo</a></li>
-                        <li class="active">Adicionar Grupo</li>
+                        <li class="active">Ordenar Grupo</li>
                 	</ol>
                 </div>
             </div>
@@ -166,32 +166,20 @@
                         </div>
                         <div class="alert alert-success">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <p><span class="glyphicon glyphicon-ok">&nbsp;</span>Imagem salva com sucesso!</p>
+                            <p><span class="glyphicon glyphicon-ok">&nbsp;</span>Ordenação realizada com sucesso!</p>
                         </div>
-                        <h1>Adicionar Grupo</h1>                        
-                        <div class="row">
-                        	<div class="col-lg-3 col-md-3">
-                            	<label for="txtLink">Nome</label><br>
-                                <input type="text" name="txtLink" id="txtLink" class="form-control" required>
-                            </div>
-                        	<div class="col-lg-3 col-md-3">
-                            	<label for="flImageBanner">Imagem</label><br>
-                                <input type="file" name="flImageBanner" id="flImageBanner" class="form-control" required onChange="document.getElementById('imageLoaded').src = 'images\\' + this.value.split('\\')[2]">
-                            </div>
-                            <div class="col-lg-3 col-md-3">
-                            	<label for="">Cor</label><br>
-                                <input type="text" name="" id="" class="form-control">
-
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                        	<div class="col-lg-3 col-md-3">
-                                	<label><input type="checkbox" name="" id=""> Status </label>
-                            </div>
+                        <h1>Ordenar Grupo</h1>                        	
+                        <div class="well well-sm">
+                            <ul class="nav nav-pills">
+                                <li><a href="#">Menu 1 <span class="glyphicon glyphicon-collapse-down"></span></a></li>
+                                <li><a href="#">Menu 2 <span class="glyphicon glyphicon-collapse-down"></span></a></li>
+                                <li><a href="#">Menu 3 <span class="glyphicon glyphicon-collapse-down"></span></a></li>
+                                <li><a href="#">Menu 4 <span class="glyphicon glyphicon-collapse-down"></span></a></li>
+                                <li><a href="#">Menu 5 <span class="glyphicon glyphicon-collapse-down"></span></a></li>
+                                <li><a href="#">Menu 6 <span class="glyphicon glyphicon-collapse-down"></span></a></li>
+                            </ul>
                         </div>
                     </form>
-                    
                 </div>
                 
             </div>
